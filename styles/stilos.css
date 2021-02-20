@@ -1,0 +1,441 @@
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+    }
+    .hero {
+      background: #23475b;
+      color: white;
+      padding: 32px 15px;
+      display: grid;
+      grid-template-columns: minmax(auto, 1024px);/*  CUAL QUIERES QUE SEA EL ESPACIO MAXIMO DE TRABAJO */
+      justify-content: center;/* CENTRA RESPECTO A LA MEDIDA DE GRID TEMPLATE-COMLUMNS */
+    }
+    .hero-container {
+      display: grid;
+      grid-template-columns: 80px 1fr 320px;
+      grid-template-areas: "badge  title       form"
+                           ".      description form"
+                           ".      countdown   form";
+      grid-gap: 10px;
+    }
+    .badge {
+      grid-area: badge;
+      justify-self: center;
+      
+    }
+    .badge img {
+      max-width: 70px;
+      background: none;
+      margin: none;
+    }
+    .title {
+      grid-area: title;
+      font-size: 36px;
+      font-weight: normal;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    .form {
+      grid-area: form;
+      text-align: center;
+      background: rgba(255, 255, 255, .9);
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+    .form input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #dbdbe2;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px
+    }
+    .form p {
+      font-size: 20px;
+      color: #3a3b3f;
+      margin-bottom: 1em;
+    }
+    .form button {
+     
+      background: #98ca3f;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      border-bottom: 5px solid #6d932b;
+      display: inline-block;
+    }
+    .countdown {
+      grid-area: countdown;
+    }
+    .countdown p {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 300;
+    }
+    .countdown span {
+      font-size: 33px;
+    }
+    .countdown span:after {
+      content: ":";
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .countdown span:last-child:after {
+     
+      display: none;
+    }
+    p {
+      margin: 0;
+    }
+    .description {
+      grid-area: description;
+    }
+
+   
+
+    .cursos{
+      background: #042b41;
+      padding: 32px 15px;
+      display: grid;
+      grid-template-columns: minmax(auto, 1024px);/* CUAL QUIERES QUE SEA EL ESPACIO MAXIMO DE TRABAJO */
+      justify-content: center;
+    }
+    .cursosContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr  ;
+      /* grid-template-rows: 70px 70px 70px; */
+      grid-template-areas: "html    css        js"
+                           "node    node       android";
+      grid-gap: 5px; 
+      justify-items: center;
+      
+    }
+    .html {
+      grid-area: html;
+      display: block;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.63);
+      border-radius: 5px;
+      padding: 5px;
+      
+    }
+    .html img{
+      width: 70px;
+      background: rgba(255, 255, 255, 0.602);
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .html button{
+      background: #98ca3f;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      border-bottom: 3px solid #6d932b;
+      border-radius: 3px;
+      margin-top:2px;
+     
+     padding: 10px 100px;
+    }
+    .html button:hover{
+      background:#6d932b ;
+    }
+
+    .css {
+      grid-area: css;
+      display: block;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.63);
+      border-radius: 5px;
+      padding: 5px;
+      color: white;
+    }
+    .css img{
+      width: 70px;
+      background: rgba(255, 255, 255, 0.602);
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .css button{
+      background: #98ca3f;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      border-bottom: 3px solid #6d932b;
+      border-radius: 3px;
+      margin-top:2px;
+     padding: 10px 100px;
+    }
+    .css button:hover{
+      background:#6d932b ;
+    }
+
+    .js {
+      grid-area: js;
+      display: block;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.63);
+      border-radius: 5px;
+      padding: 5px;
+      color: white;
+    }
+    .js img{
+      width: 70px;
+      background: rgba(255, 255, 255, 0.602);
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .js button{
+      background: #98ca3f;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      border-bottom: 3px solid #6d932b;
+      border-radius: 3px;
+      margin-top:2px;
+     padding: 10px 100px;
+    }
+    .js button:hover{
+      background:#6d932b ;
+    }
+
+    .node {
+      background: rgba(255, 255, 255, 0.376);
+      border-radius: 5px;
+      grid-area: node;
+    }
+    .node img{
+      width: 100%;
+      height: 240px;
+      border-radius: 5px;
+    }
+    .node div{
+      position: relative;
+      align-items: center;
+      background: #98ca3f;
+      border-radius: 5px;
+      margin: auto;
+      margin-top: -30px;
+      width: 100%;
+      height: 100px;
+      margin-bottom: 0;
+      padding-bottom: 26px;
+    }
+    .textnode p{
+      padding: 10px 20px;
+      text-align: center;
+      color: white;
+    }
+    .node button{
+      display: block;
+      margin:18px auto 10px auto;
+      color:  #ffffff;
+      background:rgba(255, 255, 255, 0.288);
+      font-size: 13px;
+      font-weight: bold;
+      border:1px solid rgba(255, 255, 255, 0.555);
+      outline: none;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.288);
+      border-radius: 5px;
+     padding: 10px 250px;
+     
+     
+    }
+    .node button:hover{
+      background:#6d932b ;
+      color: white;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.781);
+    }
+
+    .android {
+      grid-area: android;
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+    }
+    .android img{
+      width: 100%;
+      height: 240px;
+      background: rgba(255, 255, 255, 0.602);
+      border-radius: 5px;
+    }
+    
+    .android div{
+      position: relative;
+      align-items: center;
+      background: #98ca3f;
+      border-radius: 5px;
+      margin: auto;
+      width: 100%;
+      margin-top: -30px;
+      margin-bottom: 0;
+      padding-bottom: 1px;
+    }
+    
+    .textandroid p{
+      padding: 10px 20px;
+      text-align: center;
+      color: white;
+    }
+    .android button{
+      display: block;
+      margin:0px auto 10px auto;
+      color:  #ffffff;
+      background:rgba(255, 255, 255, 0.288);
+      font-size: 13px;
+      font-weight: bold;
+      border:1px solid rgba(255, 255, 255, 0.555);
+      outline: none;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.288);
+      border-radius: 5px;
+     padding: 10px 100px;
+     
+     
+    }
+    .android button:hover{
+      background:#6d932b ;
+      color: white;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.781);
+    }
+    
+    
+
+    
+     .html p{
+       color: rgb(255, 255, 255);
+       
+     }
+
+     /* MEDIA */
+     @media screen and (max-width: 768px) {
+      .hero-container {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "badge       title"
+                             "description description"
+                             "form        form"
+                             "countdown countdown";
+      }
+      .cursosContainer{
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-rows: 70px 70px 70px; */
+      grid-template-areas: "html html"
+                           "css css"
+                           "js js"
+                           "android android"
+                           "node node";
+    }
+    .html{
+      width: 100%;
+    }
+    .css{
+      width: 100%;
+    }
+    .js{
+      width: 100%;
+    }
+    .android{
+      width: 100%;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.521);
+    }
+    .node{
+      width: 100%;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.534);
+    }
+    .cursosContainer p{
+      padding: 4px 4px;
+      margin-bottom: 1px ;
+    }
+    .cursosContainer button{
+      opacity: 0.9;
+      padding: 10px 40%;
+      margin: 0 5px;
+      margin-bottom: 4px;
+      border-radius: 7px;
+     }
+    }
+    @media screen and (max-width: 375px) {
+      .hero-container {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "badge       title"
+                             "description description"
+                             "form        form"
+                             "countdown countdown";
+      }
+      .cursosContainer{
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-rows: 70px 70px 70px; */
+      grid-template-areas: "html html"
+                           "css css"
+                           "js js"
+                           "android android"
+                           "node node";
+    }
+
+
+    .html{
+      width: 100%;
+    }
+    .css{
+      width: 100%;
+    }
+    .js{
+      width: 100%;
+    }
+    .android{
+      width: 100%;
+      background: rgba(255, 255, 255, 0.541);
+      padding: 5px;
+    }
+    .android img{
+      height: 190px;
+      
+      object-fit: cover;
+    }
+    .android div{
+      margin-top: -30px;
+    }
+    .node{
+      width: 100%;
+      background: rgba(255, 255, 255, 0.534);
+     
+      padding: 5px;
+    }
+
+
+
+    .node div{
+      margin-top: -30px;
+      margin-bottom: 0;
+    }
+    .node button{
+      margin-bottom: 1px;
+      margin-top: 2px;
+    }
+    .node img{
+      height: 190px;
+      object-fit: cover;
+    }
+    .cursosContainer p{
+      padding: 4px 4px;
+      margin-bottom: 1px ;
+    }
+    .cursosContainer button{
+      margin: 0 5px;
+      margin-bottom: 4px;
+      opacity: 0.9;
+      padding: 10px 40%;
+      border-radius: 7px;
+     }
+    }
+  
